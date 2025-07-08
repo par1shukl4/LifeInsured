@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insured - India's Trusted Health Insurance Partner</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: gray;
+            background-size: cover;
+            background-position: center;
+            color: #ff7f50;
+            text-align: center;
+            padding: 5em 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #ff7f50;
+        }
+
+        .hero p {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero .cta-btn {
+            background-color: #ff7f50;
+            color: white;
+            padding: 0.8em 2em;
+            border: none;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 0.5em 1.2em;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: #ff7f50;
+            color: white;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2.5em 0;
+        }
+
+        .section-heading {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 1em;
+            color: #ff7f50;
+        }
+
+        .section-content {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        /* About Section */
+        .about-section {
+            background: #faf8f0;
+            text-align: center;
+            padding: 3em 0;
+        }
+
+        .about-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 3em 0;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .benefit-card {
+            background: #ffefdb;
+            border: 2px solid #ffd1b2;
+            padding: 2em;
+            margin: 1em;
+            border-radius: 12px;
+            width: 30%;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: scale(1.05);
+            text-align: center;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.4em;
+            color: #0072c6;
+            text-align: center;
+        }
+        .plans-section {
+            padding: 2em 0;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .plans-section h2 {
+            font-size: 2em;
+            margin-bottom: 1.5em;
+        }
+        .learnmore-btn {
+            background-color: #3a7bd5;
+            color: white;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 1em;
+            transition: background-color 0.3s ease;
+        } 
+
+        .learnmore-btn:hover {
+            background-color: #326bb5;
+        }
+
+        .plan-card {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 1.5em;
+            margin: 1em;
+            border-radius: 8px;
+            display: inline-block;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .plan-card h3 {
+            font-size: 1.5em;
+            color: #004080;
+        }
+
+        .plan-card p {
+            font-size: 1em;
+            margin: 1em 0;
+        }
+
+        .plan-card button {
+            background: #004080;
+            color: white;
+            padding: 0.7em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .plan-card button:hover {
+            background: #333;
+        }
+
+        .apply-section {
+    text-align: center;
+    padding: 2em 0;
+    background: #f0f8ff;
+}
+
+    .apply-btn {
+        background-color: #3a7bd5;
+        color: white;
+        padding: 1em 2em;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-radius: 8px;
+        display: inline-block;
+        margin-top: 1em;
+        transition: background-color 0.3s ease;
+    }
+
+    .apply-btn:hover {
+        background-color: #326bb5;
+    }
+
+
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 3em 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .faq-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            text-align: center;
+            color: #ff7f50;
+        }
+
+        .faq-section .faq-item {
+            max-width: 800px;
+            margin: 1em auto;
+            text-align: center;
+            padding: 1em;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 3em 0;
+            background: #0072c6;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        .footer a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Life Insured</h1>
+            <p>Affordable and Compassionate Health Insurance Tailored for India</p>
+            <button class="cta-btn">Explore Our Plans</button>
+        </div>
+    </section>
+
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#about">About Us</a>
+            <a href="#plans">Our Plans</a>
+            <a href="#testimonies">Testimonials</a>
+            <a href="#faq">FAQ</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#difference">Why Choose Us</a>
+            <a href="#social-responsibility">Social Responsibility</a>
+            <a href="#gov-collab">Gov Collaboration</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+     <!-- About Section -->
+     <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>In the 21st century, personalized healthcare and financial security have become paramount as individuals face increasingly complex health risks and lifestyle challenges. However, the current landscape of medical insurance remains largely generic, failing to account for diverse personal health metrics and lifestyle choices. Consumers, therefore, struggle to find insurance plans that align precisely with their unique health conditions, habits, and financial needs.</p><br>
+            <p>Life Insured seeks to address this gap by creating a comprehensive, consumer-focused database management system that bridges the divide between consumers and their most suitable health insurance plans. Leveraging health data—such as heart rates, smoking habits, BMI, and exercise frequency—this platform offers a nuanced approach to insurance matching that considers both lifestyle and medical history, optimizing the likelihood of coverage that is both affordable and truly relevant to individual health profiles.</p><br>
+            <p>Objective: To develop a database management system that dynamically connects consumers with tailored health insurance options, promoting personalized, accessible healthcare coverage. By focusing on health metrics and lifestyle habits, Life Insured not only empowers consumers to make informed insurance choices but also aligns with the global shift toward preventive healthcare, equitable access, and financial inclusion as defined in the United Nations' Sustainable Development Goals (SDG 3: Good Health and Well-being and SDG 10: Reduced Inequality).</p>
+            <img src="https://www.bajajallianz.com/blog/wp-content/uploads/2020/07/types-of-health-insurance.jpg" alt="About Life Insured" class="section-image">
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2>Why Choose Life Insured?</h2>
+            <div class="benefit-card">
+                <h3>Affordable Premiums</h3>
+                <p>Get access to quality medical coverage without straining your budget.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Comprehensive Coverage</h3>
+                <p>Coverage for a variety of health needs, including pre-existing conditions.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>24/7 Customer Support</h3>
+                <p>Access to our friendly and responsive support team whenever you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans-section">
+        <div class="container">
+            <h2>Our Insurance Plans</h2>
+            <div class="plan-card">
+                <h3>Basic Health Coverage</h3>
+                <p>Affordable plans for essential health coverage, ideal for young adults and individuals with minimal preexisting conditions.</p>
+                <a href="basic.html" class="learnmore-btn">Learn More</a>
+            </div>
+            <div class="plan-card">
+                <h3>Comprehensive Health Coverage</h3>
+                <p>Complete coverage including preventive care, wellness programs, and chronic condition management.</p>
+                <a href="compo.html" class="learnmore-btn">Learn More</a>
+            </div>
+            <div class="plan-card">
+                <h3>Family And Kids Health Plan</h3>
+                <p>Extensive coverage for families, ensuring everyone’s health and wellness is protected under one plan.</p>
+                <a href="familynkids.html" class="learnmore-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="apply-section">
+        <div class="container">
+            <h2>Ready to Apply for Health Insurance?</h2>
+            <p>Fill out our application form to find the best health insurance plan for you and your family.</p>
+            <a href="form.html" class="apply-btn">Apply Now</a>
+        </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h2 class="section-heading">Benefits</h2>
+        <p class="section-content">With Life Insured, enjoy the benefits of secure health coverage, affordable premiums, and our commitment to providing the highest return on investment.</p>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="difference" class="difference">
+        <h2 class="section-heading">Why Choose Life Insured</h2>
+        <p class="section-content">Our services integrate Machine Learning and data-driven insights to offer customized plans for each customer. We ensure that your coverage is tailored to your needs, giving you the best health support in India.</p>
+    </section>
+
+    <!-- Social Responsibility Section -->
+    <section id="social-responsibility" class="social-responsibility">
+        <h2 class="section-heading">Our Social Responsibility</h2>
+        <p class="section-content">We provide discounted insurance plans for underprivileged families and organize free medical camps in rural areas.</p>
+    </section>
+
+    <!-- Government Collaboration Section -->
+    <section id="gov-collab" class="gov-collab">
+        <h2 class="section-heading">In Collaboration with the Government</h2>
+        <p class="section-content">Partnering with the Government of India, Life Insured promotes health awareness, reaching rural areas to educate families on preventive health measures.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Life Insured. Empowering Health for Every Indian.</p>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Individual Health Plan</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f7f9fc; color: #333; }
+        .container { width: 90%; max-width: 800px; margin: auto; padding: 2em 0; }
+        h1 { color: #4a90e2; text-align: center; }
+        .content p { line-height: 1.6; }
+        .price { font-size: 1.5em; color: #4a90e2; margin: 1em 0; }
+        .coverage-list { list-style-type: none; padding: 0; }
+        .coverage-list li { margin: 0.5em 0; display: flex; align-items: center; }
+        .coverage-list li::before { content: "✓"; color: #4a90e2; margin-right: 0.5em; }
+        .apply-button { display: block; width: 100%; padding: 1em; background-color: #4a90e2; color: white; text-align: center; border-radius: 5px; text-decoration: none; margin-top: 2em; }
+        .apply-button:hover { background-color: #357abd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Individual Health Plan</h1>
+        <p class="price">₹1,500/month</p>
+        <div class="content">
+            <p>The Basic Individual Health Plan provides essential healthcare services tailored for single individuals, ensuring that you have access to critical health services when needed.</p>
+            <h2>Coverage Details:</h2>
+            <ul class="coverage-list">
+                <li>In-patient and out-patient care</li>
+                <li>Annual health check-ups</li>
+                <li>Emergency hospitalization</li>
+                <li>Doctor consultations</li>
+                <li>Discounts on lab tests and medications</li>
+            </ul>
+            <p>Ideal for individuals seeking affordable yet comprehensive health coverage without any added family-based benefits.</p>
+            <a href="form.html" class="apply-button">Apply Now</a>
+        </div>
+    </div>
+</body>
+</html>

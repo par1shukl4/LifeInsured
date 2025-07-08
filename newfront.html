@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insured - India's Trusted Health Insurance Partner</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        /* Hero Section */
+        .hero {
+            background-color: gray;
+            color: #ff7f50;
+            text-align: center;
+            padding: 5em 0;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .hero .cta-btn {
+            background-color: #ff7f50;
+            color: white;
+            padding: 0.8em 2em;
+            border: none;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        /* Navbar */
+        .navbar {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 0.5em 1.2em;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+        .navbar a:hover {
+            background: #ff7f50;
+            color: white;
+        }
+        /* Section Styles */
+        section {
+            padding: 2.5em 0;
+        }
+        .section-heading {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 1em;
+            color: #ff7f50;
+        }
+        .section-content {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        /* About Section */
+        .about-section {
+            background: #faf8f0;
+            text-align: center;
+            padding: 3em 0;
+        }
+        /* Benefits Section */
+        .benefits-section {
+            padding: 3em 0;
+            background: #ffffff;
+            text-align: center;
+        }
+        .benefit-card {
+            background: #ffefdb;
+            border: 2px solid #ffd1b2;
+            padding: 2em;
+            margin: 1em;
+            border-radius: 12px;
+            width: 30%;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+        .benefit-card:hover {
+            transform: scale(1.05);
+        }
+        /* Plans Section */
+        .plans-section {
+            padding: 2em 0;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .plan-card {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 1.5em;
+            margin: 1em;
+            border-radius: 8px;
+            display: inline-block;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .plan-card button {
+            background: #004080;
+            color: white;
+            padding: 0.7em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Contact Section */
+        .contact-section {
+            padding: 3em 0;
+            background: #0072c6;
+            color: white;
+            text-align: center;
+        }
+        .contact-section form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        /* Form Page for Application */
+        .form-container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 3em auto;
+        }
+        .form-container h1 {
+            text-align: center;
+            font-size: 26px;
+            color: #2d3e50;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+        .form-container label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            color: #2d3e50;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 1em;
+            border: 1px solid #dcdfe3;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #f8fafc;
+            color: #2d3e50;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            background-color: #3a7bd5;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Page -->
+    <section class="hero">
+        <div class="container">
+            <h1>Life Insured</h1>
+            <p>Affordable and Compassionate Health Insurance Tailored for India</p>
+            <a href="#application-form" class="cta-btn">Apply Now</a>
+        </div>
+    </section>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#about">About Us</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#plans">Our Plans</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Life Insured bridges the gap between health needs and insurance, providing tailored plans based on personal health and lifestyle metrics.</p>
+        </div>
+    </section>
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2>Why Choose Life Insured?</h2>
+            <div class="benefit-card">
+                <h3>Affordable Premiums</h3>
+                <p>Quality coverage without straining your budget.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>24/7 Support</h3>
+                <p>Reliable assistance whenever you need it.</p>
+            </div>
+        </div>
+    </section>
+    <section id="plans" class="plans-section">
+        <div class="container">
+            <h2>Our Plans</h2>
+            <div class="plan-card">
+                <h3>Basic Coverage</h3>
+                <p>Affordable plans for essential health coverage.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="application-form" class="form-container">
+        <h1>Health Insurance Application Form</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Life Insured. All rights reserved.</p>
+    </footer>
+</body>
+</html>
